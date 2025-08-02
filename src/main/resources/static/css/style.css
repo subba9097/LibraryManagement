@@ -1,0 +1,47 @@
+.hidden {
+  display: none !important;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  padding: 60px 20px;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+  z-index: 0;
+}
+
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+#homePage {
+  background-image: url('../img/bg-home.jpg');
+}
+
+#home {
+  background-image: url('../img/bg-books.jpg');
+}
+
+#add {
+  background-image: url('../img/bg-add.jpg');
+}
+
+#view {
+  background-image: url('../img/bg-view.jpg');
+}
+
+#delete {
+  background-image: url('../img/bg-delete.jpg');
+}
